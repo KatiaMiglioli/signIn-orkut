@@ -14,7 +14,7 @@
     <section>
       <h1>SEJA BEM VINDO!</h1>
       <img src="./logo-orkut.png" alt="Logo do Orkut" />
-      <form action="#" class="login-form">
+      <form action="#" name="form" class="login-form">
         <input type="email" name="email" placeholder="Informe seu e-mail..." />
         <input
           type="password"
@@ -22,12 +22,13 @@
           placeholder="Informe sua senha..."
         />
         <a href="#">Esqueceu sua senha?</a>
-        <button type="button" class="login-button">ENTRAR</button>
+        <button type="submit" name="submit" class="login-button" onclick="ValidateEmail(document.form.email)">ENTRAR</button>
       </form>
       <div class="create-account">
         <p>Ainda não possui conta?</p>
         <button type="button" class="register-button">CRIAR</button>
       </div>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
